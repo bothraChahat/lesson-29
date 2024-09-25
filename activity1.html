@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JSON Objects</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        var obj={name:"Raj", age:8 , grade:4}
+        var jsonobj=JSON.stringify(obj)
+        var newobj=JSON.parse(jsonobj)
+        document.getElementById("p1").innerHTML=newobj.name;
+        document.getElementById("p2").innerHTML = newobj.age;
+        document.getElementById("p3").innerHTML = newobj.grade;
+
+    </script>
+</body>
+</html>
